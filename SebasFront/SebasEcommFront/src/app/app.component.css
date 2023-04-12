@@ -1,0 +1,134 @@
+/*
+  AppPage First
+*/
+
+.headerA {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 10vh;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.headerD {
+  background: #eee;
+  width: 100%;
+  height: 3vh;
+}
+
+.headerB {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 7vh;
+}
+
+.headerB a {
+  text-decoration: none;
+}
+
+.headerB1 {
+  cursor: pointer;
+}
+
+.headerB2 {
+  cursor: pointer;
+  font-size: 18px;
+  color: rgb(68, 62, 62);
+  font-family: "Helvetica Neue", "Helvetica";
+  font-weight: 540;
+  font-variant: small-caps;
+  padding: 2px 2px 15px 2px;
+  position: relative;
+}
+
+.headerB2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 5px;
+  background-color: yellowgreen;
+  transition: all 0.25s ease-out;
+}
+
+.headerB2:hover::before {
+  width: 100%;
+}
+
+.headerC {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 7vh;
+}
+
+.headerC a {
+  text-decoration: none;
+}
+
+.headerC2 {
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Helvetica Neue", "Helvetica";
+  font-weight: 540;
+  font-variant: small-caps;
+  padding: 5px 5px 5px 20px;
+  border-left: 2px solid grey;
+}
+
+.headerC2 a {
+  color: rgb(68, 62, 62);
+}
+
+.headerC21 {
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Helvetica Neue", "Helvetica";
+  font-weight: 540;
+  font-variant: small-caps;
+  padding: 5px 5px 5px 20px;
+  border-left: 2px solid grey;
+}
+
+.headerC21 a {
+  color: rgb(68, 62, 62);
+}
+
+.headerC3 {
+  cursor: pointer;
+}
+
+.headerC3 img {
+  width: 100%;
+}
+
+.headerC4 img {
+  width: 100%;
+}
+
+.headerC1 {
+  width: 250px;
+}
+
+.headerC1 input {
+  height: 30px;
+  width: 100%;
+  padding: 20px 15px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  background: #eee;
+}
+
+.lineBelowHeader{
+  margin-top: 2px;
+  border: 0.20px solid rgba(114, 108, 108, 0.233);
+}

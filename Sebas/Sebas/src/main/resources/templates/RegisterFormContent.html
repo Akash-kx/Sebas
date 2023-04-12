@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>RegisterationForm</title>
+<link th:href="@{css/RegisterFormStyle.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <section class="container">
+       
+      <header>Registration Form</header>
+
+      <form th:action="@{/UserRegistrationInformation}" th:object="${RegistrationInformation}" method="post" class="form">
+
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" name="UserName" th:value="${RegistrationInformation.UserName}" />
+        </div>
+        <span class="firstPartError" th:each="errorGenerate : ${#fields.errors('UserName')}" th:text="${errorGenerate}"></span>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" placeholder="Enter email address" name="EmailId" th:value="${RegistrationInformation.EmailId}" />
+        </div>
+        <span class="firstPartError" th:each="errorGenerate : ${#fields.errors('EmailId')}" th:text="${errorGenerate}"></span>
+        <span class="existEmail" th:text="${ExistOrNot}"></span>
+
+        <div class="input-box">
+          <label>Password</label>
+          <input type="password" placeholder="Enter Password" name="UserPassword" />
+        </div>
+        <span class="firstPartError" th:each="errorGenerate : ${#fields.errors('UserPassword')}" th:text="${errorGenerate}"></span>
+
+        <div class="column">
+
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" placeholder="Enter phone number" name="UserPhoneNumber" th:value="${RegistrationInformation.UserPhoneNumber}" />
+            <span class="firstPartError" th:each="errorGenerate : ${#fields.errors('UserPhoneNumber')}" th:text="${errorGenerate}"></span>
+          </div>
+
+          <div class="input-box">
+            <label>Birth Date</label>
+            <input type="date" placeholder="Enter birth date" name="UserBirthDate" th:value="${RegistrationInformation.UserBirthDate}" required/>
+            <span class="firstPartError" th:each="errorGenerate : ${#fields.errors('UserBirthDate')}" th:text="${errorGenerate}"></span>
+          </div>
+
+        </div>
+
+        <div class="gender-box">
+
+          <h3>Gender</h3>
+
+          <div class="gender-option">
+
+            <div class="gender">
+              <input type="radio" id="check-male" name="UserGendar" value="Male" checked />
+              <label for="check-male">Male</label>
+            </div>
+
+            <div class="gender">
+              <input type="radio" id="check-female" name="UserGendar" value="Female" />
+              <label for="check-female">Female</label>
+            </div>
+
+            <div class="gender">
+              <input type="radio" id="check-other" name="UserGendar" value="Prefer not to mention" />
+              <label for="check-other">Prefer not to mention</label>
+            </div>
+
+          </div>
+        </div>
+
+        <button type="submit">Submit</button>
+
+      </form>
+      
+      <div class="Registration">
+
+        <span class="Registration">Already Have An Account ?
+        <a th:href="@{http://localhost:4200/LoginPage}"> <label for="check">LoginIn</label> </a>
+        </span>
+
+      </div>
+
+    </section>
+
+</body>
+</html>

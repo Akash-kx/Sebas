@@ -1,0 +1,53 @@
+<section class="product">
+
+  <div class="productA">
+
+    <div class="productB">
+      <img src="{{searchProduct.productImagePath}}" height="500">
+    </div>
+
+    <div class="productC">
+
+      <div class="productC1">
+        <h3>{{searchProduct.productName}}</h3>
+        <p class="productC12">{{searchProduct.productDescription}}</p>
+        <p class="productC13">{{searchProduct.productPrice | currency:'INR':'symbol':'3.0'}}</p>
+        <p class="productC14">inclusive of all taxes</p>
+        <p class="productC15">{{searchProduct.productClass}}</p>
+      </div>
+
+      <hr class="lineBelowHeader">
+
+      <form class="productC2" #formValue="ngForm">
+
+        <input name="productId" type="text" [ngModel]="productId">
+
+        <label class="productC21" for="size">SELECT SIZE</label>
+        <select class="productC22" [ngModel]="size" id="size" name="productSize">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </select>
+
+        <label class="productC23" for="quantity">QUANTITY</label>
+        <select class="productC24" [ngModel]="quantity" id="quantity" name="productQuantity">
+          <option [ngValue]=1>1</option>
+          <option [ngValue]=2>2</option>
+          <option [ngValue]=3>3</option>
+          <option [ngValue]=4>4</option>
+        </select>
+
+        <button class="productC25" #showCart type="submit" (click)="addToCart()">👜 Add To Cart</button>
+        <button class="productC27" [routerLink]="['/AddToBagPage']" #showBag type="submit">👜 Go To Bag</button>
+
+        <button class="productC26" #showWishList type="submit" (click)="wishList()">❤ WishList</button>
+        <button class="productC28" #showHeart type="submit" (click)="wishList()">💝 WishListed</button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>

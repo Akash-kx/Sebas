@@ -1,0 +1,75 @@
+<!-- Static Coursael HomePage First -->
+
+<section class="coursaelA">
+
+  <button class="buttonA" id="bottonAId" (click)="nextSlideCoursael(-1)" ></button>
+
+  <div class="coursaelB">
+    <img src="assets/CarouselImage/PartFirstBanner.jpg" alt="PartFirstBanner" width="100%" height=700 />
+  </div>
+
+  <div class="coursaelB">
+    <img src="assets/CarouselImage/PartFifthBanner.jpg" alt="PartFifthBanner" width="100%" height=700 />
+  </div>
+
+  <div class="coursaelB">
+    <img src="assets/CarouselImage/PartSecoundBanner.jpg" alt="PartSecoundBanner" width="100%" height=700 />
+  </div>
+
+  <div class="coursaelB">
+    <img src="assets/CarouselImage/PartThirdBanner.jpg" alt="PartThirdBanner" width="100%" height=700 />
+  </div>
+
+  <div class="coursaelB">
+    <img src="assets/CarouselImage/PartFourthBanner.jpg" alt="PartFourthBanner" width="100%" height=700 />
+  </div>
+
+  <button class="buttonA" id="bottonBId" (click)="nextSlideCoursael(1)" ></button>
+
+</section>
+
+<div class="dot">
+
+  <span class="dotA" (click)="nextSlideDot(1)" >~</span>
+  <span class="dotA" (click)="nextSlideDot(2)" >~</span>
+  <span class="dotA" (click)="nextSlideDot(3)" >~</span>
+  <span class="dotA" (click)="nextSlideDot(4)" >~</span>
+  <span class="dotA" (click)="nextSlideDot(5)" >~</span>
+
+</div>
+
+<!-- Dynamic Gif Coursael HomePage Second -->
+
+<div class="gifCoursael">
+  <img src="assets/GifDynamic/CoursaelGifHomePage.gif" alt="About Brand" width="100%" height=150 />
+</div>
+
+<!-- Product HomePage Third -->
+
+<section class="product">
+
+  <div class="productA">
+
+    <div class="productB" *ngFor="let key of allProductInInventory" (click)="productInformation(key.productId)">
+
+      <div class="productB1">
+        <img src={{key.productImagePath}} width=266.48 height=359.75/>
+      </div>
+
+      <div class="productB2">
+        <h3>{{key.productName}}</h3>
+        <p>{{key.productDescription}}</p>
+        <p [ngStyle]="{'font-size': 20+'px'}">{{key.productPrice | currency:'INR':'symbol':'3.0'}}</p>
+      </div>
+
+      <div class="productB3">
+        <p>{{key.productId}}</p>
+      </div>
+
+      <p class="productB4">{{key.productClass}}</p>
+
+    </div>
+
+  </div>
+
+</section>

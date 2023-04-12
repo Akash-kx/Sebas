@@ -1,0 +1,431 @@
+/*
+  AddToCartPage First
+*/
+
+.addToCart {
+  width: 100%;
+  margin: 40px auto;
+}
+
+.addToCartA {
+  width: 50%;
+  margin: auto;
+}
+
+.addToCartC {
+  display: flex;
+  flex-flow: row wrap;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(90, 86, 86, 0.185);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.addToCartC1 {
+  display: flex;
+  flex-flow: column wrap;
+  width: 60%;
+}
+
+.addToCartC1 h3 {
+  font-size: 20px;
+  font-family: Trebuchet MS;
+  font-variant: small-caps;
+  font-weight: bold;
+  padding: 0 0 5px 0;
+}
+
+.addToCartC1 p {
+  font-size: 20px;
+  font-variant: small-caps;
+  font-family: Arial;
+  padding: 0 0 5px 0;
+}
+
+.addToCartC2 {
+  width: 30%;
+  cursor: pointer;
+}
+
+.addToCartC2 img {
+  width: 100%;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.addToCartC12 {
+  position: relative;
+  margin-top: 20px;
+}
+
+.addToCartC12 input {
+  display: none;
+}
+
+.addToCartC14 {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  opacity: 0.9;
+  margin-right: 30%;
+}
+
+.addToCartC15 {
+  position: absolute;
+  top: 30px;
+  left: -5px;
+  width: 20%;
+  height: 30px;
+  border: 1px solid rgb(122, 111, 111);
+  border-radius: 5px;
+}
+
+.addToCartC15 option {
+  font-size: 15px;
+}
+
+.addToCartC16 {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+.addToCartC17 {
+  position: absolute;
+  top: 30px;
+  left: 44%;
+  width: 20%;
+  height: 30px;
+  border: 1px solid rgb(122, 111, 111);
+  border-radius: 5px;
+}
+
+.addToCartC17 option {
+  font-size: 15px;
+}
+
+.lineBelowHeader{
+  margin-top: 50px;
+  border: 0.20px solid rgba(114, 108, 108, 0.233);
+  width: 75%;
+}
+
+.addToCart3 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  height: 50px;
+}
+
+.addToCart3 p {
+  background: white;
+  color: grey;
+  font-size: 15px;
+  font-variant: small-caps;
+  cursor: pointer;
+  padding: 15px 30px;
+}
+
+.addToCart31 {
+  border-right: 1px solid rgba(218, 208, 208, 0.781);
+}
+
+.addToCart32 {
+  width: 60%;
+}
+
+.addCartA {
+  width: 15%;
+}
+
+.addCartA a {
+  text-decoration: none;
+}
+
+.addCartA1 {
+  width: 30%;
+  cursor: pointer;
+  font-size: 25px;
+  color: rgb(68, 62, 62);
+  font-family: "Helvetica Neue", "Helvetica";
+  font-weight: 540;
+  font-variant: small-caps;
+  padding: 2px 2px 15px 2px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.addToCart4 {
+  width: 20%;
+  display: flex;
+  flex-flow: column wrap;
+  position: absolute;
+  top: 25%;
+  transform: translateX(190%);
+}
+
+.addToCart4 h3 {
+  font-size: 20px;
+  font-variant: small-caps;
+  background: rgba(0,0,0,.04);
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.4;
+}
+
+.addToCart41 {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 6px;
+  font-size: 14px;
+  font-variant: small-caps;
+  opacity: 0.4;
+}
+
+.addToCart42 {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 6px 6px 25px 6px;
+  font-size: 19px;
+  font-variant: small-caps;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(99, 96, 96, 0.37);
+}
+
+.addToCart43 {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 25px;
+  background-color: rgb(66, 162, 162);
+  color: white;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+/*
+Shoping Bag Empty
+*/
+
+.shopPage {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.showPage1 {
+  margin-bottom: 10px;
+}
+
+.shopPage p {
+  font-size: 20px;
+  font-variant: small-caps;
+  margin-bottom: 20px;
+  padding-left: 60px;
+}
+
+.shopPage button {
+  border: none;
+  padding: 10px 25px;
+  margin-left: 60px;
+  border-radius: 5px;
+  border: 2px solid #51cccc!important;
+  background: white;
+  color: #51cccc!important;
+  font-variant: small-caps;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+/*
+Payment Gateway
+*/
+
+.container {
+  width: 100%;
+  margin-top: 90px;
+  display: none;
+}
+
+.cancelMark {
+  width: 50%;
+  margin: auto;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.card-container {
+  margin: auto;
+  position: relative;
+  height: 250px;
+  width: 30%;
+}
+
+.front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0; left: 0;
+  background: linear-gradient(45deg, blueviolet, deeppink);
+  border-radius: 5px;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 25px rgba(0,0,0,.2);
+  padding:20px;
+  transform:perspective(1000px) rotateY(0deg);
+  transition:transform .4s ease-out;
+}
+
+.visa-image {
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.visa-image img {
+  height: 50px;
+}
+
+.card-number-box {
+  padding:30px 0;
+  font-size: 20px;
+  color:#fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardDetail {
+  display: flex;
+}
+
+.box:nth-child(1) {
+  margin-right: auto;
+}
+
+.box {
+  font-size: 16px;
+  color:#fff;
+  font-variant: small-caps;
+  font-family: 'Poppins', sans-serif;
+}
+
+.payment {
+  width: 40%;
+  margin: 10px auto;
+  border-radius: 2px;
+  position: relative;
+}
+
+.payment form {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 40px;
+}
+
+.paymentA {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.paymentA p {
+  font-variant: small-caps;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0.8;
+  padding-left: 60px;
+}
+
+.paymentA input{
+  height: 40px;
+  width: 60%;
+  padding: 0 15px;
+  font-size: 15px;
+  margin: 3px 50px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+.paymentB {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.paymentB p {
+  font-variant: small-caps;
+  font-size: 18px;
+  opacity: 0.8;
+  font-weight: bold;
+  padding-left: 60px;
+}
+
+.paymentB input{
+  height: 40px;
+  width: 60%;
+  padding: 0 15px;
+  font-size: 15px;
+  margin: 3px 50px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+.paymentC {
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-left: 30px;
+}
+
+.paymentC span {
+  font-variant: small-caps;
+  font-size: 15px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.paymentC input {
+  height: 40px;
+  width: 60%;
+  padding: 0 15px;
+  font-size: 15px;
+  margin-bottom: 1.3rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+.submitButton {
+  color: white;
+  font-variant: small-caps;
+  background: linear-gradient(45deg, blueviolet, deeppink);
+  font-size: 40px;
+  cursor: pointer;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 2px;
+  width: 20%;
+  margin-left: 50px;
+}
+
+.cardError {
+  text-align: center;
+  font-size: 30px;
+  color: red;
+  font-variant: small-caps;
+  position: absolute;
+  top: -40px;
+  left: 250px;
+}

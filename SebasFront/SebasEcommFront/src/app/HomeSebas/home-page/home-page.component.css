@@ -1,0 +1,148 @@
+/*
+  Coursael HomePage First
+*/
+
+.coursaelA {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  margin-top: 20px;
+}
+
+.buttonA {
+  position: absolute;
+  cursor: pointer;
+  width: 5%;
+  height: 15%;
+  transform: translateY(-50%);
+  z-index: 1;
+  filter: blur(20px);
+  background-color: yellowgreen;
+}
+
+.coursaelB {
+  display: none;
+}
+
+#bottonAId {
+  top: 50%;
+  left: 0;
+}
+
+#bottonBId {
+  top: 50%;
+  right: 0;
+}
+
+.dot {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.dotA {
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dotAAffect {
+  color: yellowgreen;
+}
+
+/*
+  Gif Coursael HomePage Second
+*/
+
+.gifCoursael {
+  width: 90%;
+  margin: 40px auto 0 auto;
+}
+
+/*
+  Product HomePage Third
+*/
+
+.product {
+  width: 100%;
+  margin: 40px auto 0 auto;
+}
+
+.productA {
+  width: 80%;
+  margin: auto;
+}
+
+.productB {
+  width: 20%;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  margin: 10px 30px;
+  position: relative;
+}
+
+.productB1 img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(163, 158, 158, 0.486);
+}
+
+.productB1 img:hover {
+  animation-name: productOpacity;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+@keyframes productOpacity {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+.productB2 {
+  background-color: rgba(253, 250, 250, 0.959);
+  padding: 5px 10px;
+}
+
+.productB2 h3 {
+  font-size: 20px;
+  font-family: Trebuchet MS;
+  font-variant: small-caps;
+  font-weight: bold;
+  padding: 0 0 2px 0;
+}
+
+.productB2 p {
+  font-size: 12px;
+  font-variant: small-caps;
+  font-family: Arial;
+  padding: 0 0 2px 0;
+  opacity: 0.7;
+  font-weight: bold;
+}
+
+.productB3 {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  display: none;
+}
+
+.productB4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background: rgb(182, 169, 169);
+  border-radius: 5px 0 0 0;
+  padding: 1px 2px;
+  font-variant: small-caps;
+}

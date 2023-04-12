@@ -1,0 +1,170 @@
+<!-- AddToBag Page -->
+
+<section *ngIf="allAddToCartProduct != null;else showShopPage" class="addToCart">
+
+  <div class="addToCartA">
+
+    <div class="addCartA">
+      <a routerLink="/HomePage"><h2 class="addCartA1" >Home</h2></a>
+    </div>
+
+    <div class="addToCartC" *ngFor="let key of allAddToCartProduct">
+
+      <div class="addToCartC1">
+
+        <h3>{{key.productName}}</h3>
+        <p [ngStyle]="{opacity: 0.5}">{{key.productDescription}}</p>
+        <p [ngStyle]="{'font-size': 20+'px', 'font-weight': 'bold'}">{{ key.productPrice | currency:'INR':'symbol':'3.0'}}</p>
+
+        <div class="addToCartC12">
+
+          <form class="addToCartC13" #formValue="ngForm">
+
+            <input name="productId" type="text" value="{{key.addToBagId.productId}}">
+
+            <label class="addToCartC14" for="size">Select size</label>
+            <select class="addToCartC15" [(ngModel)]="key.productSize"
+            (change)="changeInValue(key.addToBagId.productId, key.productSize, key.productQuantity)"
+            id="size" name="productSize">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+
+            <label class="addToCartC16" for="quantity">Quantity</label>
+            <select class="addToCartC17" [(ngModel)]="key.productQuantity"
+            (change)="changeInValue(key.addToBagId.productId, key.productSize, key.productQuantity)"
+            id="quantity" name="productQuantity">
+              <option value=1>1</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+            </select>
+
+          </form>
+
+        </div>
+
+        <hr class="lineBelowHeader">
+
+        <div class="addToCart3">
+          <p (click)="removeAddToBag(key.addToBagId.productId)" class="addToCart31">Remove</p>
+          <p (click)="moveToWishList(key.addToBagId.productId)" class="addToCart32">Move to WishList</p>
+        </div>
+
+      </div>
+
+      <div class="addToCartC2" (click)="productInformation(key.addToBagId.productId)">
+        <img src={{key.productImagePath}} alt="product image" height="250"/>
+      </div>
+
+      <div class="addToCart4">
+
+        <h3>Price Summary</h3>
+
+        <div class="addToCart41">
+          <p>Total MRP (Incl. of taxes)</p>
+          <p>{{totalProductPrice}}</p>
+        </div>
+
+        <div class="addToCart41">
+          <p>Shipping Charge</p>
+          <p>FREE</p>
+        </div>
+
+        <div class="addToCart42">
+          <p>Sub Total</p>
+          <p>{{totalProductPrice}}</p>
+        </div>
+
+        <div (click)="buyAllProduct()" class="addToCart43">
+          <p>BUY</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ShopPage -->
+<ng-template #showShopPage>
+
+  <section class="shopPage">
+    <div class="showPage1">
+      <img src="assets/CartEmpty/EmptyCart.jpg" alt="Empty Cart" width="300" height="300" />
+    </div>
+    <p>Nothing In The Bag.</p>
+    <button (click)="continueShopping()">Continue Shopping</button>
+
+  </section>
+
+</ng-template>
+
+
+
+<!-- Payment Gateway -->
+
+<section class="container">
+
+  <p (click)="cancelPayment()" class="cancelMark">❌</p>
+
+  <div class="card-container">
+
+      <div class="front">
+          <div class="visa-image">
+              <img src="assets/PaymentImage/chip.png" alt="">
+              <img src="assets/PaymentImage/visa.png" alt="">
+          </div>
+          <div class="card-number-box">XXXXXXXXXXXX6527</div>
+          <div class="cardDetail">
+              <div class="box">
+                  <div class="card-holder-name">full name : </div>
+              </div>
+              <div class="box">
+                  <span>expire : dd/yy</span>
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+  <div class="payment">
+
+    <span class="cardError" *ngIf="cardDetailError">Not valid detail</span>
+
+    <form (ngSubmit)="payCardDetail(cardDetail)" #cardDetail="ngForm">
+
+      <div class="paymentA">
+        <p>Card number</p>
+        <input name="creditCard" ngModel type="text">
+      </div>
+
+      <div class="paymentB">
+        <p>Card holder name</p>
+        <input name="cardHolderName" ngModel type="text">
+      </div>
+
+      <div class="paymentC">
+        <div class="paymentC1">
+          <span>Expire date : </span>
+          <input name="endDate" ngModel type="date">
+        </div>
+        <div class="paymentC2">
+          <span>Cvc : </span>
+          <input name="cvc" ngModel type="text">
+        </div>
+      </div>
+
+      <button class="submitButton" type="submit">Pay</button>
+
+    </form>
+
+  </div>
+
+</section>

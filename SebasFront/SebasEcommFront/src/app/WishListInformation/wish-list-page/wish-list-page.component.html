@@ -1,0 +1,52 @@
+<section *ngIf="allWishListProduct != null; else showWishListPage" class="wishListProduct">
+
+  <div class="wishListProductA">
+
+    <div class="wishListClothA">
+      <a routerLink="/HomePage"><h2 class="wishListClothA1" >Home</h2></a>
+    </div>
+
+    <div class="wishListProductB" *ngFor="let key of allWishListProduct">
+
+      <div class="wishListProductB1" (click)="productInformation(key.wishListClusterId.productId)">
+        <img src={{key.productImagePath}} width=266.48 height=359.75/>
+      </div>
+
+      <div class="wishListProductB2">
+        <h3>{{key.productName}}</h3>
+        <p>{{key.productDescription}}</p>
+        <p [ngStyle]="{'font-size': 20+'px'}">{{key.productPrice | currency:'INR':'symbol':'3.0'}}</p>
+      </div>
+
+      <div class="wishListProductB3">
+        <p>{{key.wishListClusterId.productId}}</p>
+      </div>
+
+      <p class="wishListProductB4">{{key.productClass}}</p>
+      <p class="wishListProductB5" (click)="deleteProductWishList(key.wishListClusterId.productId)">❌</p>
+
+      <button class="wishListProductB6" #showCart type="submit" (click)="addToCart(key.wishListClusterId.productId)">
+        👜 Add To Cart
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WishListPage -->
+
+<ng-template #showWishListPage>
+
+  <section class="shopPage">
+    <div class="showPage1">
+      <img src="assets/WishListEmpty/wishListEmpty.JPG" alt="Empty Cart" width="300" height="300" />
+    </div>
+    <p>Hey! Your wishlist is empty.</p>
+    <button (click)="continueShopping()">Shop Now</button>
+
+  </section>
+
+</ng-template>

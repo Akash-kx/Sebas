@@ -1,0 +1,53 @@
+<section class="headerA">
+
+  <div class="headerD">
+
+  </div>
+
+  <div class="headerB">
+
+    <div class="headerB1">
+      <img src="assets/NavBarImages/CompanyLogo.jpg" alt="CompanyLogo" width=250 height=69/>
+    </div>
+
+    <a routerLink="/MensPage"> <h3 class="headerB2">Men</h3> </a>
+    <a routerLink="/WomensPage"> <h3 class="headerB2">Women</h3> </a>
+    <a routerLink="/YourOrderPage" [ngStyle]="{display: showYourOrderPage ? 'block' : 'none' }">
+      <h3 class="headerB2">YourOrder</h3>
+    </a>
+
+  </div>
+
+  <div class="headerC">
+
+    <div class="headerC1">
+      <input type="text" name="serachElement" placeholder="Search by product ,category or collection" autocomplete="off" #searchValue />
+    </div>
+
+    <div [ngStyle]="{display: loginDone ? 'none' : 'block'}" class="headerC2">
+      <a routerLink="/LoginPage"> Login </a>
+    </div>
+
+    <div [ngStyle]="{display: loginDone ? 'block' : 'none'}" class="headerC21">
+      <a href="http://localhost:8080/LogoutPage" (click)="logoutButton()"> Logout </a>
+    </div>
+
+    <div class="headerC3">
+      <a routerLink="/WishListPage"> <img src="assets/NavBarImages/WishList.jpg" alt="WishList Logo" width=40 height=40 /> </a>
+    </div>
+
+    <div class="headerC3">
+      <a [routerLink]="['AddToBagPage']"> <img src="assets/NavBarImages/Cart.jpg" alt="Cart Logo" width=40 height=40 /> </a>
+    </div>
+
+    <div class="headerC4">
+      <img src="assets/NavBarImages/IndianFlag.jpg" alt="IndianFlag Logo" width=40 height=30 />
+    </div>
+
+  </div>
+
+</section>
+
+<hr class="lineBelowHeader">
+
+<router-outlet></router-outlet>

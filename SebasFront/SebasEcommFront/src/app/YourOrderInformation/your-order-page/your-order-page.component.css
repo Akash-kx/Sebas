@@ -1,0 +1,204 @@
+/*
+  YourOrder Page
+*/
+
+.addToCart {
+  width: 100%;
+  margin: 40px auto;
+}
+
+.addToCartA {
+  width: 50%;
+  margin: auto;
+}
+
+.addToCartC {
+  display: flex;
+  flex-flow: row wrap;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(90, 86, 86, 0.185);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.addToCartC1 {
+  display: flex;
+  flex-flow: column wrap;
+  width: 60%;
+}
+
+.addToCartC1 h3 {
+  font-size: 20px;
+  font-family: Trebuchet MS;
+  font-variant: small-caps;
+  font-weight: bold;
+  padding: 0 0 5px 0;
+}
+
+.addToCartC1 p {
+  font-size: 20px;
+  font-variant: small-caps;
+  font-family: Arial;
+  padding: 0 0 5px 0;
+}
+
+.addToCartC2 {
+  width: 30%;
+  cursor: pointer;
+}
+
+.addToCartC2 img {
+  width: 100%;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.addToCartC12 {
+  position: relative;
+  margin-top: 20px;
+}
+
+.addToCartC12 input {
+  display: none;
+}
+
+.addToCartC14 {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  opacity: 0.9;
+  margin-right: 30%;
+}
+
+.addToCartC15 {
+  position: absolute;
+  top: -3px;
+  left: 105px;
+  width: 20%;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.addToCartC15 option {
+  font-size: 15px;
+}
+
+.addToCartC16 {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+.addToCartC17 {
+  position: absolute;
+  top: -3px;
+  right: 86px;
+  width: 20%;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.addToCartC17 option {
+  font-size: 15px;
+}
+
+.lineBelowHeader{
+  margin-top: 10px;
+  border: 0.20px solid rgba(114, 108, 108, 0.233);
+  width: 29%;
+}
+
+.addToCart3 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  height: 50px;
+}
+
+.addToCart3 p {
+  background: white;
+  color: grey;
+  font-size: 15px;
+  font-variant: small-caps;
+  cursor: pointer;
+  padding: 15px 30px;
+}
+
+.addToCart31 {
+  border-right: 1px solid rgba(218, 208, 208, 0.781);
+}
+
+.addToCart32 {
+  width: 60%;
+}
+
+.addCartA {
+  width: 100%;
+  display: flex;
+}
+
+.addCartA a {
+  text-decoration: none;
+}
+
+.addCartA1 {
+  width: 30%;
+  cursor: pointer;
+  font-size: 25px;
+  color: rgb(68, 62, 62);
+  font-family: "Helvetica Neue", "Helvetica";
+  font-weight: 540;
+  font-variant: small-caps;
+  padding: 2px 2px 15px 2px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.onTheWay {
+  width: 100%;
+  font-size: 30px;
+  padding-left: 50%;
+  font-variant: small-caps;
+  color: rgba(29, 85, 150, 0.795);
+}
+
+
+/*
+YourOrder Empty
+*/
+
+.shopPage {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.showPage1 {
+  margin: 0 0 10px -40px;
+}
+
+.shopPage p {
+  font-size: 20px;
+  font-variant: small-caps;
+  margin-bottom: 20px;
+}
+
+.shopPage button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #51cccc!important;
+  background: white;
+  color: #51cccc!important;
+  font-variant: small-caps;
+  font-size: 22px;
+  cursor: pointer;
+}

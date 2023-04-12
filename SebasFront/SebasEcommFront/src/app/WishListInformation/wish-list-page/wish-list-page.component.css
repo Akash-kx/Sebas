@@ -1,0 +1,162 @@
+/*
+  WishListPage First
+*/
+
+.wishListProduct {
+  width: 100%;
+  margin: 40px auto;
+}
+
+.wishListClothA {
+  width: 16%;
+}
+
+.wishListClothA a {
+  text-decoration: none;
+}
+
+.wishListClothA1 {
+  width: 30%;
+  font-size: 25px;
+  color: rgb(68, 62, 62);
+  font-family: "Helvetica Neue", "Helvetica";
+  font-weight: 540;
+  font-variant: small-caps;
+  padding: 2px 2px 15px 2px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.wishListProductA {
+  width: 80%;
+  margin: auto;
+}
+
+.wishListProductB {
+  width: 20%;
+  display: inline-block;
+  position: relative;
+  margin: 10px 30px;
+  position: relative;
+}
+
+.wishListProductB1 img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(163, 158, 158, 0.486);
+  cursor: pointer;
+}
+
+.wishListProductB1 img:hover {
+  animation-name: productOpacity;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+@keyframes productOpacity {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
+
+.wishListProductB2 {
+  background-color: rgba(253, 250, 250, 0.959);
+  padding: 5px 10px;
+}
+
+.wishListProductB2 h3 {
+  font-size: 20px;
+  font-family: Trebuchet MS;
+  font-variant: small-caps;
+  font-weight: bold;
+  padding: 0 0 2px 0;
+}
+
+.wishListProductB2 p {
+  font-size: 12px;
+  font-variant: small-caps;
+  font-family: Arial;
+  padding: 0 0 2px 0;
+  opacity: 0.7;
+  font-weight: bold;
+}
+
+.wishListProductB3 {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  display: none;
+}
+
+.wishListProductB4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background: rgb(182, 169, 169);
+  border-radius: 5px 0 0 0;
+  padding: 1px 2px;
+  font-variant: small-caps;
+}
+
+.wishListProductB5 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 50%);
+  background: rgba(189, 183, 183, 0.651);
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer
+}
+
+.wishListProductB6 {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  color: #207bb4;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+/*
+WishList Empty
+*/
+
+.shopPage {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.showPage1 {
+  margin-bottom: 10px;
+}
+
+.shopPage p {
+  font-size: 20px;
+  font-variant: small-caps;
+  margin-bottom: 20px;
+}
+
+.shopPage button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #51cccc!important;
+  background: white;
+  color: #51cccc!important;
+  font-variant: small-caps;
+  font-size: 25px;
+  cursor: pointer;
+}

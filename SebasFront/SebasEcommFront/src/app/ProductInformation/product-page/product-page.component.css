@@ -1,0 +1,186 @@
+/*
+  ProductPage First
+*/
+
+.product {
+  width: 75%;
+  margin: 40px auto;
+}
+
+.productA {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+}
+
+.productB {
+  width: 35%;
+}
+
+.productB img {
+  width: 100%;
+}
+
+.productC {
+  width: 40%;
+}
+
+.productC1 h3 {
+  font-size: 20px;
+  font-family: Trebuchet MS;
+  font-variant: small-caps;
+  font-weight: bold;
+  padding: 0 0 2px 0;
+}
+
+.productC12 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 0;
+  font-weight: 60;
+  font-variant: small-caps;
+  opacity: 0.9;
+}
+
+.productC13 {
+  padding: 5px 0 5px 0;
+  font-size: 30px;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+.productC14 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 0 10px 0;
+  opacity: 0.6;
+}
+
+.productC15 {
+  width: 20%;
+  padding: 5px;
+  text-align: center;
+  margin: 5px 0 10px 0;
+  font-variant: small-caps;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  background: rgba(58, 53, 53, 0.712);
+}
+
+.lineBelowHeader {
+  width: 78%;
+  margin: 30px 0;
+  border: 1px solid rgba(114, 108, 108, 0.233);
+}
+
+.productC2 {
+  position: relative;
+}
+
+.productC2 input {
+  display: none;
+}
+
+.productC21 {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  opacity: 0.9;
+  margin-right: 40%;
+}
+
+.productC22 {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 20%;
+  height: 30px;
+  border: 1px solid rgb(122, 111, 111);
+  border-radius: 5px;
+}
+
+.productC22 option {
+  font-size: 15px;
+}
+
+.productC23 {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+.productC24 {
+  position: absolute;
+  top: 30px;
+  left: 56%;
+  width: 20%;
+  height: 30px;
+  border: 1px solid rgb(122, 111, 111);
+  border-radius: 5px;
+}
+
+.productC24 option {
+  font-size: 15px;
+}
+
+.productC25 {
+  position: absolute;
+  top: 140px;
+  left: 0px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  width: 40%;
+  padding: 10px;
+  border: 0;
+  background: rgba(255, 255, 0, 0.61);
+  cursor: pointer;
+}
+
+.productC27 {
+  position: absolute;
+  top: 140px;
+  left: 0px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  width: 40%;
+  padding: 10px;
+  border: 0;
+  background: rgba(255, 255, 0, 0.61);
+  cursor: pointer;
+  display: none;
+}
+
+.productC26 {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  width: 30%;
+  padding: 9px;
+  background: white;
+  color: grey;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.productC28 {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  width: 30%;
+  padding: 9px;
+  background: white;
+  color: black;
+  border: 1px solid grey;
+  cursor: pointer;
+  display: none;
+}

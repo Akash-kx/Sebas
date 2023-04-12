@@ -1,0 +1,30 @@
+<section class="container">
+
+  <div class="form">
+
+    <header>Login</header>
+
+    <form (ngSubmit)="loginForm(formData)" #formData="ngForm">
+
+      <span class="errorGenerate">{{loginError}}</span>
+
+      <input type="text" name="userEmail" placeholder="Enter your email" autocomplete="off" ngModel />
+
+      <input type="password" name="userPassword" placeholder="Enter your password" ngModel />
+
+      <a routerLink="/LoginPage">Forgot password?</a>
+
+      <input type="submit" class="button" value="Login">
+    </form>
+
+    <div class="signup">
+
+      <span class="signup">Don't have an account?
+        <a href="http://localhost:8080/ShowRegistrationForm" target="_self"> <label for="check">Signup</label> </a>
+      </span>
+
+    </div>
+
+  </div>
+
+</section>

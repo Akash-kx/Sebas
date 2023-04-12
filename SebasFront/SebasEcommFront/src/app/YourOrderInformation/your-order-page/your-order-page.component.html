@@ -1,0 +1,66 @@
+<section *ngIf="allAddInYourOrder != null; else showYourOrderPage" class="addToCart">
+
+  <div class="addToCartA">
+
+    <div class="addCartA">
+      <a routerLink="/HomePage"><h2 class="addCartA1" >Home</h2></a>
+      <span class="onTheWay">🚘 : On The Way</span>
+    </div>
+
+    <div class="addToCartC" *ngFor="let key of allAddInYourOrder">
+
+      <div class="addToCartC1">
+
+        <h3>{{key.productName}}</h3>
+        <p [ngStyle]="{opacity: 0.5}">{{key.productDescription}}</p>
+        <p [ngStyle]="{'font-size': 20+'px', 'font-weight': 'bold'}">{{ key.productPrice | currency:'INR':'symbol':'3.0'}}</p>
+
+        <div class="addToCartC12">
+
+          <form class="addToCartC13" #formValue="ngForm">
+
+            <input name="productId" type="text" value="{{key.yourOrderClusterId.productId}}">
+
+            <label class="addToCartC14" for="size">Select size : </label>
+            <p class="addToCartC15">{{key.productSize}}</p>
+
+            <label class="addToCartC16" for="quantity">Quantity : </label>
+            <p class="addToCartC17">{{key.productQuantity}}</p>
+
+          </form>
+
+        </div>
+
+        <hr class="lineBelowHeader">
+
+        <div class="addToCart3">
+          <p (click)="removeYourOrder(key.yourOrderClusterId.productId)" class="addToCart31">Delete Order</p>
+        </div>
+
+      </div>
+
+      <div class="addToCartC2" (click)="productInformation(key.yourOrderClusterId.productId)">
+        <img src={{key.productImagePath}} alt="product image" height="250"/>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- YourOrderPage -->
+
+<ng-template #showYourOrderPage>
+
+  <section class="shopPage">
+    <div class="showPage1">
+      <img src="assets/CartEmpty/EmptyCart.jpg" alt="Empty Cart" width="300" height="300" />
+    </div>
+    <p>Sadly, you haven't placed any orders till now.</p>
+    <button (click)="continueShopping()">Shop Now</button>
+
+  </section>
+
+</ng-template>
